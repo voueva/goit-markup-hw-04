@@ -19,6 +19,12 @@ body {
     color: #434455;
     background-color: #FFFFFF;
     font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    width: 1440px;
 }
 
 .link {
@@ -93,7 +99,7 @@ header {
     display: inline-block;
     color: #2E2F42;   
     font-weight: 500;
-    padding: 24px 0;
+    padding: 24px 0 0 0;
 }
 
 .menu-link:hover,
@@ -101,6 +107,21 @@ header {
 .contact-link:hover,
 .contact-link:focus {
     color: #404BBF;
+}
+
+.active {
+    color: #404BBF;
+}
+
+.active::after {
+    content:'';
+    width: 48px; /* TODO: 100% */
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .contact {
@@ -113,13 +134,23 @@ header {
 }
 /* section 1 */
 .welcome-section {
-    background: #2E2F42;
+    /* background: #2E2F42; */
+    background-image: url(../images/people-office-1.jpg);
+    background-repeat: no-repeat;
     color: white;
+
+    background-position: center center; 
+}
+
+.dark-bg {
+    background-color: #2e2f42b4;
+    width: 1440px;
+    height: 600px;
     padding-top: 188px; 
     padding-bottom: 188px;
 }
 
-.welcome-sectioncontainer {
+.welcome-section-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,6 +220,20 @@ header {
 
 .slogan-item {
     flex-basis: calc((100% - 72px) / 4);
+}
+
+.slogan-item-container {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    /* width: 264px; */
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4FD;
+
+
+
 }
 
 .slogan-item-title {
