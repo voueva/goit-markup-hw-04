@@ -1,3 +1,17 @@
+:root {
+	--iris: #4d5ae5;
+	--ocean: #404bbf;
+	--navy-blue: #2e2f42;
+	--green: #31d0aa;
+	--slate: #434455;
+	--light-slate: #8e8f99;
+	--cornflower: #e7e9fc;
+	--cloud: #f4f4fd;
+	--navy-blue-modal: rgba(46, 47, 66, 0.4);
+	--grey: rgba(46, 47, 66, 0.7);
+	--white: #fff;
+	--dairy: #fcfcfc;
+}
 
 h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;
@@ -116,7 +130,7 @@ header {
 }
 
 .active {
-    color: #404BBF;
+    color: 31D0AA;
 }
 
 .active::after {
@@ -307,6 +321,34 @@ header {
     text-align: center;
 }
 
+.social-list {
+    justify-content: center;
+    display: flex;
+    gap: 24px;
+    margin-top: 14px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--iris);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+   background-color:  #31D0AA;
+}
+
+.social-list-icons {
+    fill: #4D5AE5;
+}
+
+
+
 /* section 4 */
 .portfolio {
     padding: 120px 0 120px 0;
@@ -345,7 +387,14 @@ header {
 
 .footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+    padding: 100px 156px;
+
+    display: flex;
+    gap: 120px;
+}
+
+.footer-section {
+    width: 264px;
 }
 
 .footer.logotype {
@@ -359,6 +408,10 @@ header {
 
 .footer-description {
     color: #F4F4FD;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .linkblock {
@@ -370,7 +423,7 @@ header {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.17;
+    
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
