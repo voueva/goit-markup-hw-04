@@ -130,7 +130,8 @@ header {
 }
 
 .active {
-    color: 31D0AA;
+    color: #404bbf;
+    position: relative;
 }
 
 .active::after {
