@@ -393,13 +393,16 @@ header {
     padding: 100px 156px;
 
     display: flex;
-    margin-right: 120px;
 }
 
 .footer-section {
     width: 264px;
     display: flex;
     align-items: baseline;
+}
+
+.footer-section.first {
+    margin-right: 120px;
 }
 
 .footer.logotype {
