@@ -393,7 +393,7 @@ header {
     padding: 100px 156px;
 
     display: flex;
-    gap: 120px;
+    margin-right: 120px;
 }
 
 .footer-section {
