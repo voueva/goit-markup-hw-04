@@ -398,6 +398,8 @@ header {
 
 .footer-section {
     width: 264px;
+    display: flex;
+    align-items: baseline;
 }
 
 .footer.logotype {
