@@ -450,8 +450,6 @@ header {
 
 .footer-section {
     width: 264px;
-    display: flex;
-    align-items: baseline;
 }
 
 .footer-section.first {
@@ -480,8 +478,10 @@ header {
 }
 
 .social-list-footer {
-    /* justify-content: center; */
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
     gap: 16px;
     margin-top: 14px;
 }
