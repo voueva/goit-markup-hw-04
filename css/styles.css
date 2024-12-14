@@ -444,6 +444,10 @@ header {
     display: flex;
 }
 
+.container {
+    display: flex;
+}
+
 .footer-section {
     width: 264px;
     display: flex;
