@@ -131,9 +131,7 @@ header {
 
 .active {
     color: #404bbf;
-    /* position: absolute;
-    left: 0; 
-    bottom: -1px; */
+    position: relative;
 }
 
 .active::after {
@@ -145,6 +143,9 @@ header {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
+    position: absolute;
+    left: 0; 
+    bottom: -1px;
 }
 
 .contact {
@@ -170,6 +171,7 @@ header {
 
     color: white;
     width: 1440px;
+    max-width: 1440px; 
     height: 600px;
     padding-top: 188px; 
     padding-bottom: 188px;
@@ -412,13 +414,10 @@ header {
     color: #f4f4fd;
 }
 
-.overlay {
+.portfolio-item-overlay {
     line-height: 1.5; 
     letter-spacing: 0.02em;
     color: #f4f4fd; 
-}
-
-.portfolio-item .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -426,20 +425,17 @@ header {
     height: 100%;
     background-color: #4D5AE5;
     color: white;
-
     padding: 40px 32px;
     transform: translateY(100%);
-
     display: flex;
     justify-content: center;
     align-items: center;
-    
     overflow: auto;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .overlay,
-.portfolio-item:focus .overlay {
+.portfolio-item:hover .portfolio-item-overlay,
+.portfolio-item:focus .portfolio-item-overlay {
     transform: translateY(0);
 }
 
